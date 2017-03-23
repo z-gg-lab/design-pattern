@@ -1,8 +1,6 @@
 package com.swagger.proxy.cglibProxy;
 
-import com.swagger.proxy.jdkproxy.AddInterface;
 import com.swagger.proxy.jdkproxy.InterfaceImpl;
-import com.swagger.proxy.jdkproxy.SubInterface;
 
 import net.sf.cglib.proxy.Enhancer;
 
