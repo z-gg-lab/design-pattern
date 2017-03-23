@@ -1,0 +1,31 @@
+package com.swagger.proxy.cglibProxy;
+
+import java.lang.reflect.Method;
+
+import com.swagger.proxy.jdkproxy.InterfaceImpl;
+
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
+
+public class CglibProxyInterceptor implements MethodInterceptor{
+
+	
+	private InterfaceImpl impl;
+	
+	public CglibProxyInterceptor(InterfaceImpl impl) {
+		this.impl = impl;
+	}
+	
+	@Override
+	public Object intercept(Object proxy, Method method, Object[] arg2, MethodProxy arg3) throws Throwable {
+		// TODO Auto-generated method stub
+		
+		String methodName = method.getName();
+		System.out.println("·½·¨Ãû£º"+methodName);
+		Object result = method.invoke(impl,arg2);
+		System.out.println("result:"+result);
+		
+		return result;
+	}
+
+}

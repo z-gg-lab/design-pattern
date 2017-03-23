@@ -1,4 +1,4 @@
-package pattern.adapter;
+package com.swagger.adapter;
 
 /**
  * 源(Adapee)角色：现在需要适配的接口。
