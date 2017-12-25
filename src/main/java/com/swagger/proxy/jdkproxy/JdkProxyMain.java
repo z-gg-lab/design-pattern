@@ -2,26 +2,28 @@ package com.swagger.proxy.jdkproxy;
 
 import java.lang.reflect.Proxy;
 
-public class JDKProxyMain {
+/**
+ * @author zhutail
+ */
+public class JdkProxyMain {
 	
 	private static int a = 10;
 	private static int b = 10;
 
-	// 创建代理对象
 	public static Object createJDKProxy(InterfaceImpl impl){
 		
 		Object newProxyInstance = Proxy.newProxyInstance(impl.getClass().getClassLoader(), 
-				impl.getClass().getInterfaces(), new JDKProxHandler(impl));
+				impl.getClass().getInterfaces(), new JdkProxyHandler(impl));
 		return newProxyInstance;
 	}
 	
 	public static void main(String[] args) {
 		
 		InterfaceImpl impl = new InterfaceImpl();
-		Object createimpl = createJDKProxy(impl);
+		Object createImpl = createJDKProxy(impl);
 		
-		((AddInterface)createimpl).add(a, b);
-		((SubInterface)createimpl).sub(a, b);
+		((AddInterface)createImpl).add(a, b);
+		((SubInterface)createImpl).sub(a, b);
 	}
 	
 }

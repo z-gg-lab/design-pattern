@@ -1,5 +1,8 @@
 package com.swagger.proxy.jdkproxy;
 
+/**
+ * @author zhutail
+ */
 public class InterfaceImpl implements AddInterface, SubInterface {
 
 	@Override

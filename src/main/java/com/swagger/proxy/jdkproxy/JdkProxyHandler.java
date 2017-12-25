@@ -4,16 +4,16 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 /**
- * JDKµÄ¶¯Ì¬´úÀí
- * 		InvocationHandler ÇĞÃæ
+ * JDKåŠ¨æ€ä»£ç†
+ * 		InvocationHandler åˆ‡é¢
  * @author Administrator
  *
  */
-public class JDKProxHandler implements InvocationHandler {
+public class JdkProxyHandler implements InvocationHandler {
 
 	private InterfaceImpl impl;
 	
-	public JDKProxHandler(InterfaceImpl impl) {
+	public JdkProxyHandler(InterfaceImpl impl) {
 		this.impl = impl;
 	}
 	
@@ -22,9 +22,9 @@ public class JDKProxHandler implements InvocationHandler {
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		// TODO Auto-generated method stub
 		String methodName = method.getName();
-		System.out.println("·½·¨Ãû£º"+methodName);
+		System.out.println("æ–¹æ³•åï¼š"+methodName);
 		Object object = method.invoke(impl, args);
-		System.out.println("½á¹ûÎª:"+object);
+		System.out.println("ç»“æœä¸ºï¼š"+object);
 		return object;
 	}
 
