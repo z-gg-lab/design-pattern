@@ -1,6 +1,5 @@
 package com.swagger.productandconsumer;
 
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
@@ -15,12 +14,12 @@ public class Main {
         Consumer consumer = new Consumer(queue);
         Product product = new Product(queue);
 
-        for(int i = 0;i<3;i++){
-            new Thread(product,"product"+i).start();
+        for (int i = 0; i < 3; i++) {
+            new Thread(product, "product" + i).start();
         }
 
-        for (int i = 0;i<5;i++){
-            new Thread(consumer,"consumer").start();
+        for (int i = 0; i < 5; i++) {
+            new Thread(consumer, "consumer").start();
         }
     }
 }
