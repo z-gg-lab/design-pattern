@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/swagger/productandconsumer/Consumer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/swagger/productandconsumer/Product.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/swagger/proxy/cglibproxy/CglibProxyInterceptor.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/swagger/proxy/cglibproxy/CglibProxyMain.java" charset="GBK" />
   </component>
