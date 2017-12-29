@@ -19,7 +19,7 @@ package com.swagger.adapter;
  *
  */
 public class Adapter2{
-	// 对象的适配器模式
+	//对象的适配器模式
 	private Adaptee adaptee;
 	
 	public Adapter2(Adaptee adaptee){
