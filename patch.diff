@@ -1,0 +1,28 @@
+From 5e1c58b57b6ad7a80e7a815e7747790fa0ecb42f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?=E6=9C=B1=E7=82=9C?= <wei.zhu@zkh360.com>
+Date: Fri, 29 Dec 2017 14:17:43 +0800
+Subject: [PATCH] =?UTF-8?q?=E6=B5=8B=E8=AF=95?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ src/main/java/com/swagger/adapter/Adapter2.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/main/java/com/swagger/adapter/Adapter2.java b/src/main/java/com/swagger/adapter/Adapter2.java
+index 104bdaa..ee7adb5 100644
+--- a/src/main/java/com/swagger/adapter/Adapter2.java
++++ b/src/main/java/com/swagger/adapter/Adapter2.java
+@@ -19,7 +19,7 @@ package com.swagger.adapter;
+  *
+  */
+ public class Adapter2{
+-	// 对象的适配器模式
++	//对象的适配器模式
+ 	private Adaptee adaptee;
+ 	
+ 	public Adapter2(Adaptee adaptee){
+-- 
+2.14.1.windows.1
+
