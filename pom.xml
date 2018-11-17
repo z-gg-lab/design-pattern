@@ -17,7 +17,6 @@
         </plugins>
     </build>
 
-
     <dependencies>
         <dependency>
             <groupId>cglib</groupId>
