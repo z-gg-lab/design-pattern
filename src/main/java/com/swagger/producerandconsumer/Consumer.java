@@ -1,4 +1,4 @@
-package com.swagger.productandconsumer;
+package com.swagger.producerandconsumer;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;

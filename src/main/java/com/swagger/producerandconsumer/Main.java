@@ -1,4 +1,4 @@
-package com.swagger.productandconsumer;
+package com.swagger.producerandconsumer;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
@@ -15,7 +15,7 @@ public class Main {
         Producer producer = new Producer(queue);
 
         for (int i = 0; i < 3; i++) {
-            new Thread(producer, "product" + i).start();
+            new Thread(producer, "producer" + i).start();
         }
 
         for (int i = 0; i < 5; i++) {
