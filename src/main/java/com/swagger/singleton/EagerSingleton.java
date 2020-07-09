@@ -1,7 +1,7 @@
 package com.swagger.singleton;
 
 /**
- * 饿汉式单例
+ * 饿汉式单例（线程安全）
  *
  * 单例模式的特点：
  *      1.私有的构造方法
@@ -19,6 +19,5 @@ public class EagerSingleton {
     public static EagerSingleton getInstance(){
         return instance;
     }
-
 
 }

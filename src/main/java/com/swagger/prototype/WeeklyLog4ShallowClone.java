@@ -72,9 +72,9 @@ public class WeeklyLog4ShallowClone implements Cloneable {
         System.out.println("内容：" + log_new.getContent());
 
         System.out.println(log_previous == log_new);
-        System.out.println(log_previous.getDate() == log_new.getDate());
-        System.out.println(log_previous.getName() == log_new.getName());
-        System.out.println(log_previous.getContent() == log_new.getContent());
+        System.out.println(log_previous.getDate().equals(log_new.getDate()));
+        System.out.println(log_previous.getName().equals(log_new.getName()));
+        System.out.println(log_previous.getContent().equals(log_new.getContent()));
     }
 
 }

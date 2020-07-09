@@ -70,4 +70,6 @@ public class GenericDemo {
         A[] arr = new A[]{a,b,c};
         System.out.println(GenericDemo.compare(arr));
     }
+
+
 }

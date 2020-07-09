@@ -7,6 +7,9 @@ package com.swagger.singleton;
  */
 public class LazySingleton {
 
+    /**
+     * volatile 防止指令重排
+     */
     private volatile static LazySingleton instance = null;
 
     private LazySingleton(){}
@@ -19,7 +22,6 @@ public class LazySingleton {
             synchronized (LazySingleton.class){
                 //第二重判断
                 if (instance == null){
-
                     instance = new LazySingleton();
                 }
             }
