@@ -7,6 +7,6 @@ public class ConcreteProduct1 extends Product {
 
     @Override
     public void method2() {
-        System.out.println("ConcreteProduct1 执行 method2");
+        System.out.println("ConcreteProduct1 执行了 method2");
     }
 }

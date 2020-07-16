@@ -12,6 +12,7 @@ public abstract class Product {
 
     /**
      * 产品类的抽象方法
+     * @return
      */
      public abstract void method2();
 }

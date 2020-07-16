@@ -17,12 +17,4 @@ public class ConcreteCreator implements Creator {
         }
         return (T) product;
     }
-
-    public static void main(String[] args) {
-        Creator creator = new ConcreteCreator();
-        ConcreteProduct1 product1 = creator.createProduct(ConcreteProduct1.class);
-        ConcreteProduct2 product2 = creator.createProduct(ConcreteProduct2.class);
-        product1.method2();
-        product2.method2();
-    }
 }
