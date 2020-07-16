@@ -3,7 +3,7 @@ package com.swagger.builder;
 import lombok.Data;
 
 @Data
-public abstract class Product {
+public class Product {
 
   private String name;
 }

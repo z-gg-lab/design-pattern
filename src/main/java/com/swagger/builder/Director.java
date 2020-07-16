@@ -18,11 +18,4 @@ public class Director {
         builder.setPart();
         return builder.buildProduct();
     }
-
-    public static void main(String[] args) {
-        Director director = new Director(new ConcreteProductA());
-        System.out.println(director.getProduct().getName());
-
-        System.out.println(new Director(new ConcreteProductB()).getProduct().getName());
-    }
 }

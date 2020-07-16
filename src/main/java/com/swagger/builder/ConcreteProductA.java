@@ -7,7 +7,7 @@ package com.swagger.builder;
  */
 public class ConcreteProductA extends Builder{
 
-    private Product product = new ProductA();
+    private Product product = new Product();
 
     @Override
     public void setPart() {
