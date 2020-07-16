@@ -8,23 +8,21 @@ package com.swagger.builder;
  */
 public class Director {
 
-    private Builder builderA = new ConcreteProductA();
+    private Builder builder;
 
-    private Builder builderB = new ConcreteProductB();
-
-    public Product getProductA() {
-        builderA.setPart();
-        return builderA.buildProduct();
+    public Director(Builder builder){
+        this.builder = builder;
     }
 
-    public Product getProductB() {
-        builderB.setPart();
-        return builderB.buildProduct();
+    public Product getProduct() {
+        builder.setPart();
+        return builder.buildProduct();
     }
 
     public static void main(String[] args) {
-        Director director = new Director();
-        System.out.println(director.getProductA().getName());
-        System.out.println(director.getProductB().getName());
+        Director director = new Director(new ConcreteProductA());
+        System.out.println(director.getProduct().getName());
+
+        System.out.println(new Director(new ConcreteProductB()).getProduct().getName());
     }
 }
