@@ -44,9 +44,6 @@ public class WeeklyLog4ShallowClone implements Cloneable {
         logNew.setDate("2020-07-16");
 
         System.out.println(logPrevious == logNew);
-        System.out.println(logPrevious.getDate().equals(logNew.getDate()));
-        System.out.println(logPrevious.getName().equals(logNew.getName()));
-        System.out.println(logPrevious.getContent().equals(logNew.getContent()));
     }
 
 }
