@@ -1,6 +1,6 @@
 package com.swagger.builder;
 
-public class ConcreteProductB extends Builder{
+public class ConcreteBuilderB extends Builder{
 
     private Product product = new Product();
 

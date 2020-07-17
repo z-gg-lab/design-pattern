@@ -5,7 +5,7 @@ package com.swagger.builder;
  *
  * @author 003364
  */
-public class ConcreteProductA extends Builder{
+public class ConcreteBuilderA extends Builder{
 
     private Product product = new Product();
 
