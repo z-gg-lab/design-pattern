@@ -8,6 +8,8 @@ import java.lang.reflect.Constructor;
 /**
  * 虚拟机会保证线程安全
  *
+ * 不会被破坏
+ *
  * @author 003364
  */
 
@@ -26,12 +28,12 @@ public enum SingletonEnum {
     }
 
     public static void main(String[] args) {
-//        SingletonEnum.wreckByReflect();
+        SingletonEnum.wreckByReflect();
         SingletonEnum.wreckByDeserialization();
     }
 
     /**
-     * 打破单例
+     * 破坏单例
      */
     @SneakyThrows
     public static void wreckByReflect(){
