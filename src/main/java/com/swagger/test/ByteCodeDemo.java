@@ -1,7 +1,6 @@
 package com.swagger.test;
 
 public class ByteCodeDemo {
-
     private int a  = 1;
 
     public int add(){

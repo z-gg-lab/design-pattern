@@ -12,7 +12,7 @@ public class Generator {
     public static void  main(String[] args) throws Exception {
         ClassReader cr = new ClassReader("com.swagger.test.asm1.Account");
         ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_MAXS);
-        ClassAdapter classAdapter = new AddSecurityCheckClassAdapter(cw);
+        ClassAdapter classAdapter = new TimeClassAdapter(cw);
         cr.accept(classAdapter, ClassReader.SKIP_DEBUG);
         byte[] data = cw.toByteArray();
 

@@ -4,6 +4,10 @@ import com.swagger.test.asm.Base;
 
 import java.lang.management.ManagementFactory;
 
+/**
+ * 在JVM运行中的时候，将Base类的process()方法做替换
+ */
+
 public class Test {
 
     public static void main(String[] args) {
