@@ -1,4 +1,4 @@
-package com.swagger.test.Instrument;
+package com.swagger.test.instrument;
 
 import com.sun.tools.attach.AgentInitializationException;
 import com.sun.tools.attach.AgentLoadException;

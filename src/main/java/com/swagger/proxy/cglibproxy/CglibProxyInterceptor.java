@@ -23,7 +23,7 @@ public class CglibProxyInterceptor implements MethodInterceptor{
 		// TODO Auto-generated method stub
 		
 		String methodName = method.getName();
-		System.out.println("·½·¨Ãû£º"+methodName);
+		System.out.println("æ–¹æ³•åæ˜¯ï¼š"+methodName);
 		Object result = method.invoke(impl,arg2);
 		System.out.println("result:"+result);
 		
